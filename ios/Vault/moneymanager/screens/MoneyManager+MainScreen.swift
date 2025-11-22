@@ -1,5 +1,5 @@
 //
-//  MoneyManager+HomeScreen.swift
+//  MoneyManager+MainScreen.swift
 //  Vault
 //
 //  Created by arga on 21/11/25.
@@ -8,15 +8,15 @@
 
 import SwiftUI
 
-struct MoneyManagerHomeScreen: View {
+struct MoneyManagerMainScreen: View {
     var body: some View {
         VStack {
-            Text("Money Manager Home Screen!")
+            Text("Money Manager Main Screen!")
         }
         .padding()
     }
 }
 
 #Preview {
-    MoneyManagerHomeScreen()
+    MoneyManagerMainScreen()
 }

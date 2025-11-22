@@ -1,12 +1,12 @@
 //
-//  Category.swift
+//  MoneyManager+Category.swift
 //  Vault
 //
 //  Created by arga on 21/11/25.
 //
 
 
-enum Category: CaseIterable {
+enum MoneyManagerCategory: CaseIterable {
     case salary
     case bonus
     case interest
@@ -30,7 +30,9 @@ enum Category: CaseIterable {
     case pets
     case charity
     
-    var type: TransactionType {
+    case other
+    
+    var type: MoneyManagerTransactionType {
         switch self {
         case .salary, .bonus, .interest, .investment, .gift, .freelance:
             return .income
@@ -65,6 +67,8 @@ enum Category: CaseIterable {
         case .coffee:        return "☕"
         case .pets:          return "🐾"
         case .charity:       return "❤️"
+
+        case .other:         return "🌀"
         }
     }
     
@@ -92,6 +96,8 @@ enum Category: CaseIterable {
         case .coffee:        return "Coffee"
         case .pets:          return "Pets"
         case .charity:       return "Charity"
+
+        case .other:         return "Other"
         }
     }
     
@@ -119,6 +125,8 @@ enum Category: CaseIterable {
         case .coffee:        return "coffee"
         case .pets:          return "pets"
         case .charity:       return "charity"
+            
+        case .other:         return "other"
         }
     }
 }
