@@ -1,4 +1,4 @@
-database
+vault.db
 main
 
 .env*

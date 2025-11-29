@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS "moneymanager_transactions"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "title" TEXT NOT NULL,
+    "type" TEXT CHECK("type" IN ('INCOME', 'EXPENSE')) NOT NULL,
+    "amount" INTEGER NOT NULL,
+    "created_at" TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    
+);
